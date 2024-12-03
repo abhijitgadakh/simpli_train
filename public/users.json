@@ -1,0 +1,323 @@
+[
+  {
+      "profile": {
+          "personal_information": {
+              "first_name": "Rohan",
+              "last_name": "Raushan",
+              "age": 35,
+              "gender": "Male",
+              "address": "2nd Floor, 99, 5th Cross Rd, 6th Block, Koramangala, Bengaluru, Karnataka 560095"
+          },
+          "contact_information": {
+              "email": "rakeshraushan@gmail.com",
+              "phone_number": "+91 9922004856"
+          },
+          "bio": "I'm a recent graduate with a passion for data. I'm eager to learn data analysis techniques and build a strong foundation in this exciting field. I'm excited to explore the courses offered on Simplitrain and gain the necessary skills to kickstart my data analyst career.",
+          "preferred_language": ["English", "Hindi"],
+          "interested_topics": ["Web Development", "Mobile Development", "Programming Languages", "Leadership", "Career Development", "Digital Marketing"],
+          "social_media": ["linkedin", "twitter", "github"]
+      },
+      "education": [
+          {
+              "university": "Imperial College London",
+              "degree": "Masters in Marketing",
+              "graduationDate": "March 2020",
+              "duration": "March 2016 - June 2018"
+          },
+          {
+              "university": "MIT University",
+              "degree": "Bachelor’s degree in Engineering and Technology",
+              "graduationDate": "March 2020",
+              "duration": "March 2012 - June 2016"
+          }
+      ],
+      "work_experience": [
+          {
+              "organization": "Amazon",
+              "position": "Software engineer",
+              "start_date": "July 2018",
+              "end_date": "present"
+          }
+      ]
+  },
+  {
+      "profile": {
+          "personal_information": {
+              "first_name": "Amit",
+              "last_name": "Sharma",
+              "age": 30,
+              "gender": "Male",
+              "address": "No. 12, E Block, Sector 17, Chandigarh"
+          },
+          "contact_information": {
+              "email": "amitsharma@gmail.com",
+              "phone_number": "+91 9988776655"
+          },
+          "bio": "I am a passionate developer with experience in web development. I am always looking for opportunities to learn and grow in the tech industry.",
+          "preferred_language": ["English", "Hindi"],
+          "interested_topics": ["Programming", "Data Science", "Web Development"],
+          "social_media": ["linkedin", "github"]
+      },
+      "education": [
+          {
+              "university": "Harvard University",
+              "degree": "Bachelors in Computer Science",
+              "graduationDate": "May 2018",
+              "duration": "September 2014 - May 2018"
+          }
+      ],
+      "work_experience": [
+          {
+              "organization": "Google",
+              "position": "Frontend Developer",
+              "start_date": "August 2018",
+              "end_date": "present"
+          }
+      ]
+  },
+  {
+      "profile": {
+          "personal_information": {
+              "first_name": "Sita",
+              "last_name": "Patel",
+              "age": 28,
+              "gender": "Female",
+              "address": "12th Floor, Silver Tower, Pune"
+          },
+          "contact_information": {
+              "email": "sitapatel@gmail.com",
+              "phone_number": "+91 9876543210"
+          },
+          "bio": "I am a recent graduate with an interest in data science and machine learning. I aim to contribute to the tech field by working on challenging problems.",
+          "preferred_language": ["English", "Marathi"],
+          "interested_topics": ["Machine Learning", "Data Science", "Artificial Intelligence"],
+          "social_media": ["linkedin", "twitter"]
+      },
+      "education": [
+          {
+              "university": "Stanford University",
+              "degree": "Masters in Data Science",
+              "graduationDate": "June 2022",
+              "duration": "August 2020 - June 2022"
+          }
+      ],
+      "work_experience": [
+          {
+              "organization": "IBM",
+              "position": "Data Scientist",
+              "start_date": "July 2022",
+              "end_date": "present"
+          }
+      ]
+  },
+  {
+      "profile": {
+          "personal_information": {
+              "first_name": "Kiran",
+              "last_name": "Reddy",
+              "age": 40,
+              "gender": "Male",
+              "address": "9th Floor, Orchid Towers, Bangalore"
+          },
+          "contact_information": {
+              "email": "kiranreddy@gmail.com",
+              "phone_number": "+91 8123456789"
+          },
+          "bio": "Experienced software engineer with a deep interest in cloud technologies and enterprise solutions. I am focused on developing scalable and efficient software systems.",
+          "preferred_language": ["English", "Telugu"],
+          "interested_topics": ["Cloud Computing", "Software Engineering", "Big Data"],
+          "social_media": ["linkedin"]
+      },
+      "education": [
+          {
+              "university": "University of California, Berkeley",
+              "degree": "Bachelors in Information Systems",
+              "graduationDate": "May 2006",
+              "duration": "September 2002 - May 2006"
+          }
+      ],
+      "work_experience": [
+          {
+              "organization": "Microsoft",
+              "position": "Cloud Architect",
+              "start_date": "June 2012",
+              "end_date": "present"
+          }
+      ]
+  },
+  {
+      "profile": {
+          "personal_information": {
+              "first_name": "Neha",
+              "last_name": "Kumari",
+              "age": 32,
+              "gender": "Female",
+              "address": "Flat 2B, Sunshine Apartments, Delhi"
+          },
+          "contact_information": {
+              "email": "nehakumari@gmail.com",
+              "phone_number": "+91 9012345678"
+          },
+          "bio": "I am a digital marketer with a passion for analytics and customer engagement strategies. I have experience working with top brands in the industry.",
+          "preferred_language": ["English", "Hindi"],
+          "interested_topics": ["Digital Marketing", "SEO", "Content Strategy"],
+          "social_media": ["linkedin", "twitter"]
+      },
+      "education": [
+          {
+              "university": "University of Delhi",
+              "degree": "Bachelors in Business Administration",
+              "graduationDate": "May 2014",
+              "duration": "August 2010 - May 2014"
+          }
+      ],
+      "work_experience": [
+          {
+              "organization": "HubSpot",
+              "position": "Digital Marketing Specialist",
+              "start_date": "July 2015",
+              "end_date": "present"
+          }
+      ]
+  },
+  {
+      "profile": {
+          "personal_information": {
+              "first_name": "Vikram",
+              "last_name": "Singh",
+              "age": 27,
+              "gender": "Male",
+              "address": "K-5, Saket, New Delhi"
+          },
+          "contact_information": {
+              "email": "vikramsingh@gmail.com",
+              "phone_number": "+91 8876543210"
+          },
+          "bio": "I am a passionate developer specializing in mobile app development and UX/UI design. I aim to create seamless user experiences in every project.",
+          "preferred_language": ["English", "Hindi"],
+          "interested_topics": ["Mobile Development", "UX/UI Design", "App Development"],
+          "social_media": ["github", "linkedin"]
+      },
+      "education": [
+          {
+              "university": "University of Mumbai",
+              "degree": "Bachelors in Computer Applications",
+              "graduationDate": "April 2017",
+              "duration": "August 2013 - April 2017"
+          }
+      ],
+      "work_experience": [
+          {
+              "organization": "Apple",
+              "position": "iOS Developer",
+              "start_date": "May 2017",
+              "end_date": "present"
+          }
+      ]
+  },
+  {
+      "profile": {
+          "personal_information": {
+              "first_name": "Tina",
+              "last_name": "Thomas",
+              "age": 29,
+              "gender": "Female",
+              "address": "101, Greenwood Apartments, Chennai"
+          },
+          "contact_information": {
+              "email": "tinathomas@gmail.com",
+              "phone_number": "+91 9234567890"
+          },
+          "bio": "I am a creative content writer and editor. I specialize in writing compelling stories and building content strategies for blogs and websites.",
+          "preferred_language": ["English"],
+          "interested_topics": ["Content Writing", "SEO", "Creative Writing"],
+          "social_media": ["twitter", "linkedin"]
+      },
+      "education": [
+          {
+              "university": "University of Madras",
+              "degree": "Masters in English Literature",
+              "graduationDate": "December 2017",
+              "duration": "August 2015 - December 2017"
+          }
+      ],
+      "work_experience": [
+          {
+              "organization": "Writers' Hub",
+              "position": "Senior Content Writer",
+              "start_date": "January 2018",
+              "end_date": "present"
+          }
+      ]
+  },
+  {
+      "profile": {
+          "personal_information": {
+              "first_name": "Ravi",
+              "last_name": "Verma",
+              "age": 33,
+              "gender": "Male",
+              "address": "House No. 3, Park Lane, Hyderabad"
+          },
+          "contact_information": {
+              "email": "raviverma@gmail.com",
+              "phone_number": "+91 8765432109"
+          },
+          "bio": "I am a business analyst with experience in analyzing data to improve operational efficiency and help drive business decisions.",
+          "preferred_language": ["English"],
+          "interested_topics": ["Business Analysis", "Data Analysis", "Operations Management"],
+          "social_media": ["linkedin"]
+      },
+      "education": [
+          {
+              "university": "Indian Institute of Technology",
+              "degree": "Bachelors in Business Administration",
+              "graduationDate": "July 2015",
+              "duration": "August 2010 - July 2015"
+          }
+      ],
+      "work_experience": [
+          {
+              "organization": "Deloitte",
+              "position": "Business Analyst",
+              "start_date": "August 2015",
+              "end_date": "present"
+          }
+      ]
+  },
+  {
+      "profile": {
+          "personal_information": {
+              "first_name": "Deepika",
+              "last_name": "Gupta",
+              "age": 31,
+              "gender": "Female",
+              "address": "8A, Rishabh Nagar, Faridabad"
+          },
+          "contact_information": {
+              "email": "deepikagupta@gmail.com",
+              "phone_number": "+91 9212345678"
+          },
+          "bio": "I am a data analyst with strong expertise in working with big data, creating reports, and providing insights for strategic decision-making.",
+          "preferred_language": ["English", "Hindi"],
+          "interested_topics": ["Data Analytics", "Machine Learning", "Big Data"],
+          "social_media": ["linkedin", "twitter"]
+      },
+      "education": [
+          {
+              "university": "Indian Institute of Management",
+              "degree": "Masters in Data Analytics",
+              "graduationDate": "June 2019",
+              "duration": "August 2017 - June 2019"
+          }
+      ],
+      "work_experience": [
+          {
+              "organization": "Accenture",
+              "position": "Data Analyst",
+              "start_date": "July 2019",
+              "end_date": "present"
+          }
+      ]
+  }
+]
