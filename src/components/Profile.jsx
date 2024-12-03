@@ -1,9 +1,12 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import { BiPencil } from "react-icons/bi";
 
 const Profile = () => {
   const { id } = useParams();
   const [user, setUser] = useState(null);
+  const [isEditing, setIsEditing] = useState(false); // State to control slider visibility
+  const [editedUser, setEditedUser] = useState({}); // State to store edited data
 
   useEffect(() => {
     fetch("/users.json")
@@ -11,6 +14,7 @@ const Profile = () => {
       .then((data) => {
         if (data && data[id]) {
           setUser(data[id]);
+          setEditedUser(data[id].profile.personal_information); // Initialize edited data
         } else {
           console.error("User not found");
         }
@@ -18,11 +22,38 @@ const Profile = () => {
       .catch((error) => console.error("Error fetching user:", error));
   }, [id]);
 
+  const handleEditClick = () => {
+    setIsEditing(true); // Show the slider
+  };
+
+  const handleCloseSlider = () => {
+    setIsEditing(false); // Close the slider
+  };
+
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setEditedUser((prev) => ({
+      ...prev,
+      [name]: value,
+    }));
+  };
+
+  const handleSaveChanges = () => {
+    // Save the changes (You can add your API call here to update the user data)
+    setUser((prev) => ({
+      ...prev,
+      profile: {
+        ...prev.profile,
+        personal_information: editedUser,
+      },
+    }));
+    setIsEditing(false); // Close the slider after saving
+  };
+
   if (!user) return <div>Loading...</div>;
 
   // Updated data structure
-  const { profile, education, work_experience } = user;
-  const { first_name, last_name, age, gender, address } = profile.personal_information;
+  const { first_name, last_name, age, gender, address } = user.profile.personal_information;
 
   return (
     <div className="flex min-h-screen">
@@ -49,20 +80,7 @@ const Profile = () => {
                 <div className="w-28 h-28 rounded-full bg-gray-400 flex items-center justify-center relative">
                   <span className="text-gray-600 font-bold">Image</span>
                   <button className="absolute bottom-2 right-2 bg-white p-2 rounded-full shadow-md border border-gray-300">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      strokeWidth="2"
-                      stroke="currentColor"
-                      className="w-5 h-5 text-gray-600"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="M15.232 5.232l3.536 3.536M9 11.25h6.75m-2.25-2.25l5.25 5.25m0 0L12 21.75M2.25 16.5l7.5-7.5"
-                      />
-                    </svg>
+                    <BiPencil />
                   </button>
                 </div>
                 <h2 className="text-xl font-semibold mt-4 text-center">
@@ -84,12 +102,15 @@ const Profile = () => {
             </div>
 
             {/* Right Box */}
-            
             <div className="w-5/6 bg-white p-6 rounded-lg shadow-md ml-6 overflow-y-auto">
-            <div className="flex justify-between items-center mb-6">
+              <div className="flex justify-between items-center mb-6">
                 <h2 className="text-2xl font-semibold">Personal Information</h2>
-                <button className="bg-gray-200 p-2 rounded-lg hover:bg-gray-300">
+                <button
+                  onClick={handleEditClick}
+                  className="flex items-center bg-white text-gray-600 border border-gray-300 rounded-full px-4 py-2 hover:bg-gray-100"
+                >
                   Edit
+                  <BiPencil className="text-lg ml-2" />
                 </button>
               </div>
 
@@ -110,11 +131,87 @@ const Profile = () => {
                   <strong>Address:</strong> {address}
                 </p>
               </div>
-              
             </div>
           </div>
         </div>
       </div>
+
+      {/* Slider for Editing */}
+      {isEditing && (
+        <>
+          {/* Background Blur */}
+          <div className="fixed top-0 left-0 w-full h-full bg-blue-500 bg-opacity-10 backdrop-blur-sm z-40" />
+          
+          <div className="fixed top-0 right-0 w-1/2 h-full bg-white shadow-xl z-50 p-6 overflow-y-auto">
+            <div className="flex justify-between items-center mb-6">
+              <h2 className="text-2xl font-semibold">Edit Personal Information</h2>
+              <button onClick={handleCloseSlider} className="text-lg font-semibold text-gray-500">
+                X
+              </button>
+            </div>
+
+            <div className="text-lg">
+              <label className="block mb-2">
+                <strong>First Name:</strong>
+                <input
+                  type="text"
+                  name="first_name"
+                  value={editedUser.first_name}
+                  onChange={handleInputChange}
+                  className="w-full p-2 border border-gray-300 rounded-lg"
+                />
+              </label>
+              <label className="block mb-2">
+                <strong>Last Name:</strong>
+                <input
+                  type="text"
+                  name="last_name"
+                  value={editedUser.last_name}
+                  onChange={handleInputChange}
+                  className="w-full p-2 border border-gray-300 rounded-lg"
+                />
+              </label>
+              <label className="block mb-2">
+                <strong>Age:</strong>
+                <input
+                  type="number"
+                  name="age"
+                  value={editedUser.age}
+                  onChange={handleInputChange}
+                  className="w-full p-2 border border-gray-300 rounded-lg"
+                />
+              </label>
+              <label className="block mb-2">
+                <strong>Gender:</strong>
+                <input
+                  type="text"
+                  name="gender"
+                  value={editedUser.gender}
+                  onChange={handleInputChange}
+                  className="w-full p-2 border border-gray-300 rounded-lg"
+                />
+              </label>
+              <label className="block mb-2">
+                <strong>Address:</strong>
+                <input
+                  type="text"
+                  name="address"
+                  value={editedUser.address}
+                  onChange={handleInputChange}
+                  className="w-full p-2 border border-gray-300 rounded-lg"
+                />
+              </label>
+
+              <button
+                onClick={handleSaveChanges}
+                className="mt-6 bg-blue-500 text-white py-2 px-4 rounded-lg"
+              >
+                Save Changes
+              </button>
+            </div>
+          </div>
+        </>
+      )}
     </div>
   );
 };
